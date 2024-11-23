@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main container styling */
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+  max-width: 500px;
+  width: 90%;
+}
+
+/* Header styling */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+/* Button styles */
+.choices button {
+  background: #ffffff;
+  border: none;
+  border-radius: 5px;
+  color: #6a11cb;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.choices button:hover {
+  background: #2575fc;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+.choices button:active {
+  transform: scale(0.95);
+  background: #6a11cb;
+}
+
+/* Result text */
+#result {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .choices button {
+    padding: 0.7rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  #result {
+    font-size: 1.3rem;
+  }
+}
